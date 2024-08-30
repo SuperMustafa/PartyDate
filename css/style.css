@@ -1,0 +1,131 @@
+:root{
+    --h3-bg:rgb(249, 113, 113);
+    --p-bg:rgb(225, 203, 203);
+    --heading-color:rgb(58, 58, 58);
+}
+.h3-bg{
+    background-color: var(--h3-bg);
+}
+
+.p-bg{
+    background-color: var(--p-bg);
+}
+.heading-color{
+    color: var(--heading-color);
+}
+p{
+    margin: 0;
+    padding: 0;
+}
+a{
+    text-decoration: none;
+    color:white;
+}
+
+body{
+    height: 2000px;
+}
+
+.home-background{
+    background-image: linear-gradient(rgba(255, 55, 55, 0.5),rgba(255,55,55,0.5)),url(../images/events-heavenly-header.jpg);
+    background-size: 100% 100%;
+    height: 95vh ;
+}
+.main-heading{
+    transform: translateY(-60px);
+}
+.main-heading h1{
+    font-size:4rem;
+    color: white;
+}
+h1::before{
+    content: " ُ";
+    
+}
+
+
+/* ====================sidebar====================== */
+
+.side-bar{
+    width: 0px;
+    padding:0px ;
+    height: 100vh;
+    background-color: black;
+    position: fixed;
+    top: 0;
+    
+}
+
+.anchor-list{
+    opacity: 0;
+}
+.close-btn{
+    opacity: 0;
+}
+.side-bar .anchor-list li a{
+    color: white;
+    transition: all 0.2s;
+}
+.side-bar .anchor-list li a:hover{
+    color: rgb(98, 14, 14) ;
+}
+
+.close-btn i{
+    transition: color 0.2s;
+    cursor: pointer;
+
+}
+.close-btn i:hover{
+    color: rgb(98, 14, 14)!important ;
+}
+
+
+.open-sidebar{
+  position: absolute;
+  top: 40%;
+}
+
+
+/* ====================sidebar====================== */
+  /* ==================singers====================== */
+#slider-down h3{
+    cursor: pointer;
+}
+  /* ==================singers====================== */
+
+  /* ======countDown======== */
+  .countDown-img{
+    background-image: linear-gradient(rgba(255, 55, 55, 0.5),rgba(255,55,55,0.5)),url(../images/invitation-2508607__340.jpg);
+    background-size: 100% 100%;
+     height: 300px;
+  }
+
+  .row .col-md-3 .box{
+    border: solid white 1px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+  }
+
+
+.left-side > h2,h3,p {
+    padding: 20px 0 ;
+}
+  
+.square{
+    width: 40px;
+    height: 40px;
+    border: solid 1px gray;
+    cursor: pointer;
+}
+.square i{
+    color:gray;
+}
+.square:hover{
+    background-color: rgb(202, 6, 6);
+}
+.square:hover i{
+    color: white;
+}
+  /* ======countDown======== */
